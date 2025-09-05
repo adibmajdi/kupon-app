@@ -1,4 +1,5 @@
-import { neon } from "@neondatabase/serverless";
+// api/debug.js
+import { sql } from "../lib/db.js";
 
 export default async function handler(req, res) {
   try {
@@ -8,4 +9,3 @@ export default async function handler(req, res) {
     res.status(500).json({ error: err.message });
   }
 }
-
