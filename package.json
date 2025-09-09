@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@neondatabase/serverless": "^1.0.1"
+    "@neondatabase/serverless": "^1.0.1",
+    "pg": "^8.16.3"
   }
 }
