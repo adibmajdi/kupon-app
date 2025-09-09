@@ -9,7 +9,7 @@ function Report({ setMenu }) {
   useEffect(() => {
     const fetchBatches = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/batch");
+        const res = await fetch("/api/batch");
         const data = await res.json();
         setBatches(data);
       } catch (err) {
@@ -22,7 +22,7 @@ function Report({ setMenu }) {
   // Ambil detail kupon per batch
   const fetchDetail = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/batch/${id}`);
+      const res = await fetch(`/api/batch`);
       const data = await res.json();
       setSelectedBatch(data.batch);
       setCoupons(data.coupons);

@@ -30,7 +30,7 @@ function InputForm({ setMenu }) {
 
     try {
       // Coba ke endpoint RESTful yang kita pakai di Report (POST /api/batch)
-      let res = await fetch("http://localhost:5000/api/batch", {
+      let res = await fetch("/api/batch", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -40,7 +40,7 @@ function InputForm({ setMenu }) {
       if (!res.ok) {
         const text = await res.text();
         // coba sekali lagi ke /api/generate
-        res = await fetch("http://localhost:5000/api/generate", {
+        res = await fetch("/api/batch", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
