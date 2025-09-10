@@ -1,27 +1,21 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "@neondatabase/serverless": "^1.0.1",
-    "pg": "^8.16.3"
-=======
   "name": "kupon-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.8.0",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "pg": "^8.11.5",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "vercel-build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,11 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.10"
->>>>>>> cec3d39c74c848995c58fabfd547fbef8f53ee25
   }
 }
